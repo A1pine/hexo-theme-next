@@ -124,9 +124,9 @@ darkmode: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -514,9 +514,9 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
-    mhchem: false
+    mhchem: true
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
@@ -1013,3 +1013,10 @@ vendors:
 css: css
 js: js
 images: images
+
+# hexo-tag-cloud 设置词云的字体类型、颜色、大小、背景色
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColour: \#fa4867
+    textHeight: 25
+    outlineColour: \pink
